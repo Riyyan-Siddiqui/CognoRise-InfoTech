@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      shrink-to-fit="no"
+    />
+    <title>BMI-Calculator</title>
+  </head>
+  <link rel="stylesheet" href="../src/style.css" />
+  <body>
+    <div class="container" id="container">
+      <h1 id="heading">BMI Calculator</h1>
+      <form action="" name="bmi-form">
+        <div class="name-container" id="name-container">
+          <p>Name:</p>
+          <input
+            type="text"
+            name="Name"
+            id="Name"
+            placeholder="Enter Your Name"
+            required
+            autocomplete="on"
+          />
+        </div>
+        <div id="data-container">
+          <div id="weight-div" class="data-subcontainer">
+            <p>Enter your weight</p>
+            <input
+              type="text"
+              name="weight"
+              id="weight"
+              placeholder="Weight (Kg)"
+              required
+            />
+          </div>
+          <div id="height-div" class="data-subcontainer">
+            <p>Enter your height</p>
+            <input
+              type="text"
+              name="height"
+              id="height"
+              placeholder="Height (m)"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit" id="subBtn">Calculate BMI</button>
+      </form>
+      <div id="output-container">
+        <p id="loading"></p>
+        <p id="output"></p>
+      </div>
+    </div>
+    <div id="bmi-index-container">
+      <img src="./assets/BMI-index.png" alt="BMI-index image" />
+    </div>
+
+    <script src="../src/script.js"></script>
+  </body>
+</html>
